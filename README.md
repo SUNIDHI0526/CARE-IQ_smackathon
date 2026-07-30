@@ -10,36 +10,6 @@
 An AI-powered Digital Health Locker that centralizes medical records, digitizes prescriptions, provides intelligent healthcare assistance, and enables instant emergency access—all in one secure platform.
 </p>
 
-<p align="center">
-
-![Hackathon](https://img.shields.io/badge/Hackathon-SMAKATHON-blue)
-![Status](https://img.shields.io/badge/Status-Prototype-success)
-![Python](https://img.shields.io/badge/Python-FastAPI-blue)
-![Firebase](https://img.shields.io/badge/Firebase-Storage-orange)
-![AI Powered](https://img.shields.io/badge/AI-Powered-purple)
-
-</p>
-
-<h1 align="center">🩺 CAREIQ</h1>
-
-<p align="center">
-<b>Unified • Intelligent • Life-Saving</b>
-</p>
-
-<p align="center">
-An AI-powered Digital Health Locker that centralizes medical records, digitizes prescriptions, provides intelligent healthcare assistance, and enables instant emergency access—all in one secure platform.
-</p>
-
-<p align="center">
-
-![Hackathon](https://img.shields.io/badge/Hackathon-SMAKATHON-blue)
-![Status](https://img.shields.io/badge/Status-Prototype-success)
-![Python](https://img.shields.io/badge/Python-FastAPI-blue)
-![Firebase](https://img.shields.io/badge/Firebase-Storage-orange)
-![AI Powered](https://img.shields.io/badge/AI-Powered-purple)
-
-</p>
-
 > **One Secure Health Locker. One Intelligent Assistant. One Life-Saving Platform.**
 
 CAREIQ is an AI-powered digital healthcare platform that centralizes a patient's medical records, simplifies healthcare information, and enables instant access to critical health data during emergencies. By combining secure cloud storage, OCR technology, artificial intelligence, and emergency response features, CAREIQ makes healthcare more accessible, organized, and intelligent.

@@ -1,281 +1,264 @@
 /* =========================================
    1. Base & Layout
 ========================================= */
-
-/* Reset basic margins and set up the main body to center the content */
 body {
     margin: 0;
-    padding: 40px 0;
-    font-family: Arial, sans-serif;
-    background-color: #e9ecef; /* A slightly darker background to make the white phone frame pop */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e9ecef; 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-/* Styling for the top PROFILE text */
-.top-profile-text {
-    color: #333333; /* Dark grey */
-    font-weight: bold;
+.desktop-dashboard {
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden; 
+}
+
+
+/* =========================================
+   2. Sidebar Navigation (Left Side)
+========================================= */
+.sidebar {
+    width: 260px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #eef0f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-header {
+    padding: 30px;
+    text-align: left;
+}
+
+.brand-header h2 {
+    margin: 0;
+    color: #145c28; 
     font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
     letter-spacing: 1px;
 }
 
-/* Styling for the mobile mockup frame */
-.mobile-mockup-frame {
-    /* Fixed dimensions for laptop viewing */
-    width: 400px; 
-    height: 800px; 
-    
-    /* Light grey-white gradient background simulating the image */
-    background: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%);
-    
-    /* Rounded corners and shadow to simulate a physical phone screen */
-    border-radius: 40px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    
-    /* To keep inner content contained within the rounded corners */
-    overflow: hidden; 
-    position: relative;
-    
-    /* Optional: A subtle border to act as the phone's physical edge */
-    border: 6px solid #ffffff; 
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.nav-item:hover {
+    background-color: #eef0f2;
+}
+
+/* Updated Sidebar Icons */
+.nav-icon {
+    font-size: 20px;
+    color: #8e8e93;
+    margin-right: 15px;
+    width: 24px; /* Keeps icons perfectly aligned horizontally */
+    text-align: center;
+}
+
+.nav-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Active Sidebar State */
+.nav-item.active {
+    background-color: #e8f3eb; 
+}
+
+.nav-item.active .nav-text {
+    color: #145c28; 
+}
+
+.nav-item.active .nav-icon {
+    color: #145c28; /* Turns the font icon green */
 }
 
 
 /* =========================================
-   2. Header & User Profile Card
+   3. Main Content Area
 ========================================= */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
 
-/* Screen Header Title */
 .screen-header {
-    text-align: center;
-    padding: 30px 20px 10px; /* Padding accommodates typical status bar space */
+    margin-bottom: 30px;
 }
 
 .screen-title {
-    font-size: 16px;
+    font-size: 28px;
     font-weight: 700;
     color: #1a1a1a;
-}
-
-/* User Profile Card */
-.user-profile-card {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 15px 20px;
-    margin: 15px 20px 25px 20px;
-    display: flex;
-    align-items: center;
-    
-    /* Subtle shadow to enhance the "card-like" appearance */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); 
-}
-
-/* Profile Image */
-.profile-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: #e0e0e0; /* Placeholder background color */
-}
-
-/* Text Container */
-.profile-details {
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* User Name Typography */
-.profile-name {
-    margin: 0 0 4px 0;
-    font-size: 17px;
-    font-weight: 700;
-    color: #2c2c2c;
-    letter-spacing: 0.2px;
-}
-
-/* ABHA ID Typography */
-.profile-id {
     margin: 0;
-    font-size: 12px;
-    font-weight: 500;
-    color: #737373; /* Clean, professional grey */
 }
 
 
 /* =========================================
-   3. Main Menu List
+   4. User Profile Card
 ========================================= */
-
-/* Main Menu Card Container */
-.menu-list-card {
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin: 0 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+.user-profile-card {
+    background-color: #fdfdfd;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02); 
 }
 
-/* Individual Menu Item */
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #e0e0e0; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-details {
+    margin-left: 25px;
+    flex: 1; 
+}
+
+.profile-name {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.profile-id {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373; 
+}
+
+.edit-btn {
+    background-color: #145c28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.edit-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   5. Main Menu List
+========================================= */
+.menu-list-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
 .menu-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 20px;
-    border-bottom: 1px solid #f2f2f2; /* Subtle divider line */
+    padding: 22px 30px;
+    border-bottom: 1px solid #f2f2f2; 
     cursor: pointer;
+    transition: background 0.2s;
 }
 
-/* Flexbox grouping for left and right elements */
+.menu-item:hover {
+    background-color: #fcfcfc;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
 .menu-item-left,
 .menu-item-right {
     display: flex;
     align-items: center;
 }
 
-/* Placeholder styling for the left icons */
+/* Updated Menu Icons */
 .menu-icon {
-    width: 20px;
-    height: 20px;
-    background-color: #c4c4c4; /* Gray placeholder color */
-    border-radius: 4px;
-    margin-right: 15px;
-    display: inline-block;
+    font-size: 20px;
+    color: #8e8e93;
+    margin-right: 20px;
+    width: 24px; /* Keeps icons perfectly aligned horizontally */
+    text-align: center;
 }
 
-/* Menu Text Typography */
 .menu-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #2c2c2c;
 }
 
-/* The '3 Members' Tag */
 .menu-tag {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #999999;
-    margin-right: 10px;
-}
-
-/* CSS-drawn Chevron Right Icon */
-.icon-chevron-right {
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #a0a0a0;
-    border-right: 2px solid #a0a0a0;
-    transform: rotate(45deg);
-    display: inline-block;
-}
-
-
-/* =========================================
-   4. Logout Button
-========================================= */
-
-/* Logout Button Specific Container Styling */
-.logout-btn {
-    border-bottom: none; /* Removes the divider line since it's the last item */
-    padding-top: 22px; /* Adds a bit more visual separation from the list above */
-}
-
-/* Logout Text Typography */
-.logout-text {
-    font-size: 14px;
-    font-weight: 700;
-    color: #e63946; /* Distinct red color matching the image */
-}
-
-/* CSS-drawn Logout Icon (Placeholder) */
-.icon-logout {
-    width: 16px;
-    height: 16px;
     margin-right: 15px;
-    display: inline-block;
-    position: relative;
-    /* Drawing the box part of the logout icon */
-    border: 2px solid #e63946;
-    border-right: none;
-    border-radius: 4px 0 0 4px;
+    background: #f4f6f8;
+    padding: 4px 10px;
+    border-radius: 12px;
 }
 
-/* Drawing the arrow part of the logout icon */
-.icon-logout::after {
-    content: "→";
-    color: #e63946;
-    font-size: 16px;
-    font-weight: bold;
-    position: absolute;
-    right: -10px;
-    top: -3px;
+/* Updated Chevron Icon */
+.icon-chevron-right {
+    font-size: 14px;
+    color: #a0a0a0;
 }
 
 
 /* =========================================
-   5. Bottom Navigation
+   6. Logout Button
 ========================================= */
-
-/* Bottom Navigation Container */
-.bottom-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-around; /* Distributes items evenly across the bar */
-    align-items: center;
-    padding: 15px 10px 25px; /* Extra bottom padding accommodates the phone "chin" */
-    box-sizing: border-box;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow above the nav */
-    border-radius: 0 0 40px 40px; /* Matches the bottom corners of the mockup frame */
-    z-index: 10;
+.logout-btn {
+    border-top: 1px solid #f2f2f2;
 }
 
-/* Individual Navigation Item */
-.nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 60px;
+.logout-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e63946; 
 }
 
-/* Standard Nav Icon Placeholder (Gray) */
-.nav-icon {
+/* Updated Logout Icon */
+.icon-logout {
+    font-size: 20px;
+    color: #e63946;
+    margin-right: 20px;
     width: 24px;
-    height: 24px;
-    background-color: #8e8e93; /* Medium gray */
-    margin-bottom: 4px;
-    /* Basic placeholder shape until SVGs are added */
-    border-radius: 4px; 
-    display: inline-block;
-}
-
-/* Standard Nav Text Typography (Gray) */
-.nav-text {
-    font-size: 11px;
-    font-weight: 600;
-    color: #8e8e93;
-}
-
-/* --- Active State (Profile) --- */
-.nav-item.active .nav-text {
-    color: #145c28; /* Deep green matching the image */
-}
-
-.nav-item.active .nav-icon {
-    background-color: #145c28; /* Deep green for the active icon */
-    /* Making the profile icon placeholder round to look like a person */
-    border-radius: 50% 50% 0 0; 
+    text-align: center;
 }

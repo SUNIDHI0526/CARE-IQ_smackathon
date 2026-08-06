@@ -122,3 +122,10 @@ body{
    font-size: 42px;
    color:#1c2840;
 }
+.link{
+    color:#0f0f0f;
+   
+}
+.link:hover{
+    color:white;
+}

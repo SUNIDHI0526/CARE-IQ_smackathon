@@ -3,128 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="./CSS/profile.css">
+    <title>Profile Page - Desktop View</title>
+    <link rel="stylesheet" href="./CSS/profile.css"> <!-- Ensure this points to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <h1 class="top-profile-text">PROFILE</h1>
-    
-    <div class="mobile-mockup-frame">
+    <div class="desktop-dashboard">
         
-        <!-- Top screen title -->
-        <div class="screen-header">
-            <span class="screen-title">Profile</span>
-        </div>
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand-header">
+                <h2>CARE-IQ</h2>
+            </div>
+            <div class="side-nav">
+                <div class="nav-item">
+                    <i class="nav-icon fa-solid fa-house"></i>
+                    <span class="nav-text">Home</span>
+                </div>
+                <div class="nav-item">
+                    <i class="nav-icon fa-solid fa-qrcode"></i>
+                    <span class="nav-text">Scan</span>
+                </div>
+                <div class="nav-item">
+                    <i class="nav-icon fa-solid fa-robot"></i>
+                    <span class="nav-text">AI Assistant</span>
+                </div>
+                <div class="nav-item">
+                    <i class="nav-icon fa-solid fa-bell"></i>
+                    <span class="nav-text">Alerts</span>
+                </div>
+                <!-- Active Item: Profile -->
+                <div class="nav-item active">
+                    <i class="nav-icon fa-solid fa-user"></i>
+                    <span class="nav-text">Profile</span>
+                </div>
+            </div>
+        </aside>
 
-        <!-- White card-like element for user info -->
-        <div class="user-profile-card">
-            <img src="path/to/avatar.jpg" alt="Profile Picture" class="profile-avatar">
+        <!-- Main Content Area -->
+        <main class="main-content">
             
-            <div class="profile-details">
-                <h2 class="profile-name">Sunidhi Borutkar</h2>
-                <p class="profile-id">ABHA ID: 91-XXXX-XXXX-1234</p>
-            </div>
-        </div>
+            <header class="screen-header">
+                <h1 class="screen-title">Profile Settings</h1>
+            </header>
 
-        <!-- Main Menu List -->
-        <div class="menu-list-card">
-            
-            <!-- Item 1: Personal Details -->
-            <div class="menu-item">
-                <div class="menu-item-left">
-                    <i class="icon-personal-details menu-icon"></i>
-                    <span class="menu-text">Personal Details</span>
+            <!-- User Info Card -->
+            <div class="user-profile-card">
+                <img src="https://ui-avatars.com/api/?name=Sunidhi+Borutkar&background=145c28&color=fff&size=128" alt="Profile Picture" class="profile-avatar">
+                
+                <div class="profile-details">
+                    <h2 class="profile-name">Sunidhi Borutkar</h2>
+                    <p class="profile-id">ABHA ID: 91-XXXX-XXXX-1234</p>
                 </div>
-                <div class="menu-item-right">
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </div>
-
-            <!-- Item 2: Family Members -->
-            <div class="menu-item">
-                <div class="menu-item-left">
-                    <i class="icon-family-members menu-icon"></i>
-                    <span class="menu-text">Family Members</span>
-                </div>
-                <div class="menu-item-right">
-                    <span class="menu-tag">3 Members</span>
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </div>
-
-            <!-- Item 3: ABHA & Health ID -->
-            <div class="menu-item">
-                <div class="menu-item-left">
-                    <i class="icon-abha-health-id menu-icon"></i>
-                    <span class="menu-text">ABHA & Health ID</span>
-                </div>
-                <div class="menu-item-right">
-                    <i class="icon-chevron-right"></i>
-                </div>
+                
+                <button class="edit-btn">Edit Profile</button>
             </div>
 
-            <!-- Item 4: Settings -->
-            <div class="menu-item">
-                <div class="menu-item-left">
-                    <i class="icon-settings menu-icon"></i>
-                    <span class="menu-text">Settings</span>
+            <!-- Main Menu List -->
+            <div class="menu-list-card">
+                
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <i class="menu-icon fa-solid fa-address-card"></i>
+                        <span class="menu-text">Personal Details</span>
+                    </div>
+                    <div class="menu-item-right">
+                        <i class="icon-chevron-right fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
-                <div class="menu-item-right">
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </div>
 
-            <!-- Item 5: Help & Support -->
-            <div class="menu-item">
-                <div class="menu-item-left">
-                    <i class="icon-help-support menu-icon"></i>
-                    <span class="menu-text">Help & Support</span>
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <i class="menu-icon fa-solid fa-users"></i>
+                        <span class="menu-text">Family Members</span>
+                    </div>
+                    <div class="menu-item-right">
+                        <span class="menu-tag">3 Members</span>
+                        <i class="icon-chevron-right fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
-                <div class="menu-item-right">
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </div>
-            
-            <!-- Logout Button -->
-            <div class="menu-item logout-btn">
-                <div class="menu-item-left">
-                    <i class="icon-logout"></i>
-                    <span class="logout-text">Logout</span>
-                </div>
-            </div>
-            
-        </div>
 
-        <!-- Bottom Navigation Bar -->
-        <div class="bottom-nav">
-            <div class="nav-item">
-                <i class="nav-icon icon-home"></i>
-                <span class="nav-text">Home</span>
-            </div>
-            
-            <div class="nav-item">
-                <i class="nav-icon icon-scan"></i>
-                <span class="nav-text">Scan</span>
-            </div>
-            
-            <div class="nav-item">
-                <i class="nav-icon icon-ai"></i>
-                <span class="nav-text">AI</span>
-            </div>
-            
-            <div class="nav-item">
-                <i class="nav-icon icon-alerts"></i>
-                <span class="nav-text">Alerts</span>
-            </div>
-            
-            <!-- Active Item: Profile -->
-            <div class="nav-item active">
-                <i class="nav-icon icon-profile-nav"></i>
-                <span class="nav-text">Profile</span>
-            </div>
-        </div>
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <i class="menu-icon fa-solid fa-id-card"></i>
+                        <span class="menu-text">ABHA & Health ID</span>
+                    </div>
+                    <div class="menu-item-right">
+                        <i class="icon-chevron-right fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
 
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <i class="menu-icon fa-solid fa-gear"></i>
+                        <span class="menu-text">Settings</span>
+                    </div>
+                    <div class="menu-item-right">
+                        <i class="icon-chevron-right fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-left">
+                        <i class="menu-icon fa-solid fa-circle-question"></i>
+                        <span class="menu-text">Help & Support</span>
+                    </div>
+                    <div class="menu-item-right">
+                        <i class="icon-chevron-right fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="menu-item logout-btn">
+                    <div class="menu-item-left">
+                        <i class="icon-logout fa-solid fa-arrow-right-from-bracket"></i>
+                        <span class="logout-text">Logout</span>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
     </div>
 
 </body>

@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login | CAREIQ</title>
+
+    <link rel="stylesheet" href="./CSS/index.css">
+
     <link rel="stylesheet" href="./CSS/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
+
 <section class="auth-page">
+
+    <!-- LEFT SIDE -->
+
     <div class="auth-left">
+
         <div class="overlay"></div>
+
         <div class="left-content">
-            <img src="assets/logo/logo.png" class="logo" alt="CAREIQ Logo">
+
+            <img src="../assests/CAREIQ logo.png" class="logo" alt="CAREIQ Logo">
+
             <h1>CAREIQ</h1>
+
             <p>
+
                 Your AI-powered healthcare companion.
+
                 Access your medical records,
+
                 prescriptions, reminders,
+
                 and emergency information
+
                 anytime, anywhere.
 
             </p>
 
             <div class="feature-list">
+
                 <div>
+
                     <i class="fa-solid fa-check"></i>
+
                     Secure Medical Vault
+
                 </div>
 
                 <div>
+
                     <i class="fa-solid fa-check"></i>
+
                     AI Health Assistant
+
                 </div>
 
                 <div>
+
                     <i class="fa-solid fa-check"></i>
+
                     Smart Medicine Identifier
+
                 </div>
 
                 <div>
+
                     <i class="fa-solid fa-check"></i>
+
                     Emergency QR Access
+
                 </div>
 
             </div>
@@ -51,74 +89,111 @@
 
     </div>
 
+    <!-- RIGHT SIDE -->
+
     <div class="auth-right">
+
         <div class="login-card">
+
             <h2>Welcome Back 👋</h2>
+
             <p>
+
                 Sign in to continue to CAREIQ
+
             </p>
 
             <form id="loginForm">
+
                 <div class="input-group">
+
                     <label>Email Address</label>
+
                     <input
                     type="email"
                     placeholder="Enter your email"
                     required>
+
                 </div>
 
                 <div class="input-group">
+
                     <label>Password</label>
+
                     <div class="password-box">
+
                         <input
                         type="password"
                         id="password"
                         placeholder="Enter password"
                         required>
+
                         <i
                         class="fa-solid fa-eye"
                         id="togglePassword"></i>
 
                     </div>
+
                 </div>
 
                 <div class="options">
+
                     <label>
+
                         <input type="checkbox">
+
                         Remember Me
+
                     </label>
+
                     <a href="#">Forgot Password?</a>
 
                 </div>
+
                 <button
                 class="btn-primary login-btn">
+
                     Login
+
                 </button>
+
             </form>
 
             <div class="divider">
+
                 <span>OR</span>
+
             </div>
 
             <button class="google-btn">
+
                 <img
                 src="assets/icons/google.png"
                 alt="Google">
+
                 Continue with Google
 
             </button>
 
             <div class="bottom-text">
+
                 Don't have an account?
+
                 <a href="signup.html">
+
                     Sign Up
+
                 </a>
+
             </div>
+
         </div>
 
     </div>
+
 </section>
-<script src="js/login.js"></script>
+
+<script src="./js/login.js"></script>
 
 </body>
 

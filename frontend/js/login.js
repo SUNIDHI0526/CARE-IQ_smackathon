@@ -1,6 +1,4 @@
-/* ==========================================
-   CAREIQ Login JavaScript
-========================================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -8,10 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordInput = document.getElementById("password");
     const togglePassword = document.getElementById("togglePassword");
     const loginButton = document.querySelector(".login-btn");
-
-    /* ==========================================
-       Show / Hide Password
-    ========================================== */
 
     togglePassword.addEventListener("click", () => {
 
@@ -36,10 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     });
-
-    /* ==========================================
-       Login Validation
-    ========================================== */
 
     loginForm.addEventListener("submit", function(e){
 
@@ -94,10 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
-/* ==========================================
-   Email Validation
-========================================== */
 
 function validateEmail(email){
 

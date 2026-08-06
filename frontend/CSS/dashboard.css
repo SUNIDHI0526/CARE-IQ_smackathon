@@ -47,7 +47,7 @@ body{
     align-items: center;
     gap:15px;
     font-weight: 600;
-    color:#555;
+    color:#0f0f0f;
     transition:0.3s;
 }
 .sidebar ul li i{
@@ -59,7 +59,38 @@ body{
     color:white;
 }
 .active{
-    background:#076850;
+    background:#c0c1c1;
     color:white;
     box-shadow: 0 10px 25px rbga(11, 143, 117, 0.3);
 }
+.main{
+    margin-left: 260px;
+    padding:30px;
+    background:#f4f7fc;
+    min-height:100vh;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 40px;
+}
+.header h1{
+    font-size: 42px;
+   color: #1c2840;
+}
+.header p{
+    color:#777;
+    margin-top: 10px;
+}
+.icons{
+    display:flex;
+    gap:20px;
+}
+.icons i{
+   width: 50px;
+   height:50px;
+   background:white;
+   
+}
+

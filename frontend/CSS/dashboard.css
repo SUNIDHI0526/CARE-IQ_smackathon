@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f3f5fb;
+    background:#c8d0e8;
 }
 
 .sidebar{
@@ -55,7 +55,7 @@ body{
     font-size:18px;
 }
 .sidebar ul li:hover{
-    background: #076850;
+    background: #093329;
     color:white;
 }
 .active{
@@ -77,10 +77,10 @@ body{
 }
 .header h1{
     font-size: 42px;
-   color: #1c2840;
+   color: #105443;
 }
 .header p{
-    color:#777;
+    color:#3a3838;
     margin-top: 10px;
 }
 .icons{
@@ -91,6 +91,34 @@ body{
    width: 50px;
    height:50px;
    background:white;
-   
+   border-radius: 50%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08) ;
+   cursor:pointer;
 }
-
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:25px;
+}
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.card i{
+    font-size: 35px;
+    color:#14a37f;
+    margin-bottom: 20px;
+}
+.cards h3{
+    color:#666;
+    margin-bottom:20px;
+}
+.card h2{
+   font-size: 42px;
+   color:#1c2840;
+}

@@ -1,0 +1,287 @@
+
+.auth-page{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:#F4F8FB;
+}
+
+.auth-left{
+
+    position:relative;
+    background:linear-gradient(135deg,#105443,#093329);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    padding:60px;
+}
+
+.auth-left::before{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-180px;
+    left:-150px;
+}
+
+.auth-left::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:rgba(255,255,255,.05);
+    border-radius:50%;
+    bottom:-100px;
+    right:-100px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.05);
+}
+
+.left-content{
+    position:relative;
+    z-index:2;
+    max-width:480px;
+    color:white;
+}
+
+.left-content .logo{
+    width:90px;
+    margin-bottom:25px;
+}
+
+.left-content h1{
+    color:white;
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.left-content p{
+
+    color:rgba(255,255,255,.92);
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.feature-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.feature-list div{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:17px;
+    font-weight:500;
+}
+
+.feature-list i{
+    width:38px;
+    height:38px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+}
+
+.auth-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.login-card{
+    width:100%;
+    max-width:470px;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(18px);
+    border-radius:22px;
+    padding:45px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.login-card h2{
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.login-card>p{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.input-group{
+    margin-bottom:22px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#374151;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:50px;
+}
+
+.password-box i{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#6B7280;
+    transition:.3s;
+    height: 900px;
+}
+
+.password-box i:hover{
+    color:var(--primary);
+}
+
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0 30px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+    color:#4B5563;
+}
+
+.options input{
+    width:auto;
+}
+
+.options a{
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    border:none;
+    font-size:16px;
+    margin-bottom:25px;
+}
+
+
+.divider{
+    display:flex;
+    align-items:center;
+    margin:25px 0;
+}
+
+.divider::before,
+
+.divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#E5E7EB;
+}
+
+.divider span{
+    padding:0 18px;
+    color:#9CA3AF;
+    font-size:14px;
+}
+
+.google-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    background:white;
+    border:1px solid #D1D5DB;
+    border-radius:12px;
+    padding:14px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.google-btn img{
+    width:22px;
+}
+
+.google-btn:hover{
+    background:#F9FAFB;
+    transform:translateY(-2px);
+}
+
+.bottom-text{
+    margin-top:28px;
+    text-align:center;
+    color:#6B7280;
+}
+
+.bottom-text a{
+    color:var(--primary);
+    font-weight:700;
+}
+
+@media(max-width:1024px){
+.auth-page{
+    grid-template-columns:1fr;
+}
+
+.auth-left{
+    display:none;
+}
+
+.auth-right{
+    padding:30px;
+}
+
+.login-card{
+    max-width:500px;
+}
+
+}
+@media(max-width:600px){
+.login-card{
+    padding:30px 25px;
+}
+
+.login-card h2{
+    font-size:28px;
+}
+
+.options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+}

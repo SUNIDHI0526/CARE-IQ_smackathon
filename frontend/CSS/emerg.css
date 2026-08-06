@@ -1,0 +1,381 @@
+/* ==========================================
+   EMERGENCY PAGE
+========================================== */
+
+.emergency-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.emergency-header h1{
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+.emergency-header p{
+
+    color:#6B7280;
+
+}
+
+/* ==========================================
+   SOS CARD
+========================================== */
+
+.sos-card{
+
+    background:linear-gradient(135deg,#EF4444,#DC2626);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(239,68,68,.30);
+
+}
+
+#sosButton{
+
+    width:180px;
+
+    height:180px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#DC2626;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+#sosButton:hover{
+
+    transform:scale(1.08);
+
+}
+
+.sos-card p{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.emergency-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 350px;
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.medical-card,
+
+.qr-card,
+
+.hospital-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.medical-card h2,
+
+.qr-card h2,
+
+.hospital-card h2{
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+   INFO ROWS
+========================================== */
+
+.info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.info:last-child{
+
+    border-bottom:none;
+
+}
+
+.info strong{
+
+    color:#374151;
+
+}
+
+.info span{
+
+    color:#6B7280;
+
+}
+
+/* ==========================================
+   QR
+========================================== */
+
+.qr-card{
+
+    text-align:center;
+
+}
+
+#qrImage{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:contain;
+
+    margin:20px auto;
+
+}
+
+.qr-card p{
+
+    color:#6B7280;
+
+}
+
+/* ==========================================
+   HOSPITALS
+========================================== */
+
+.hospital-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.hospital{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    background:#F8FAFC;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.hospital:hover{
+
+    background:#EEF8F5;
+
+    transform:translateX(8px);
+
+}
+
+.hospital i{
+
+    width:55px;
+
+    height:55px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.hospital strong{
+
+    display:block;
+
+    margin-bottom:5px;
+
+}
+
+.hospital p{
+
+    color:#6B7280;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1000px){
+
+.emergency-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sos-card{
+
+    padding:30px;
+
+}
+
+#sosButton{
+
+    width:140px;
+
+    height:140px;
+
+    font-size:34px;
+
+}
+
+#qrImage{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.sos-card,
+
+.medical-card,
+
+.qr-card,
+
+.hospital-card{
+
+    animation:fadeEmergency .6s ease;
+
+}
+
+@keyframes fadeEmergency{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   SOS PULSE
+========================================== */
+
+#sosButton{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(255,255,255,.6);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 35px rgba(255,255,255,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(255,255,255,0);
+
+    }
+
+}

@@ -43,7 +43,7 @@ header{
 }
 
 .navbar{
-    background:white;
+    background:#ebfcf8;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -58,8 +58,8 @@ header{
 }
 
 .logo img{
-    width:60px;
-    height:60px;
+    width:250px;
+    height:150px;
 }
 
 .logo h1{
@@ -297,5 +297,10 @@ footer{
     text-align:center;
     gap:20px;
 }
+
+}
+.nav-links a{
+    color:#105443;
+    font-weight: bold;
 
 }

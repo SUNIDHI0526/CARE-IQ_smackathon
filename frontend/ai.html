@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | CAREIQ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<img src="assets/logo/logo.png">
+
+<h2>CAREIQ</h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="assistant.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+<li>
+
+<a href="prescriptions.html">
+
+<i class="fa-solid fa-file-medical"></i>
+
+Prescription Scanner
+
+</a>
+
+</li>
+
+<li>
+
+<a href="medicine.html">
+
+<i class="fa-solid fa-pills"></i>
+
+Medicine Identifier
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vault.html">
+
+<i class="fa-solid fa-folder"></i>
+
+Medical Vault
+
+</a>
+
+</li>
+
+<li>
+
+<a href="emergency.html">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+Emergency
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="main-content">
+
+<div class="assistant-page">
+
+<!-- LEFT -->
+
+<div class="chat-sidebar">
+
+<h2>AI Health Assistant</h2>
+
+<button class="btn-primary new-chat">
+
+<i class="fa-solid fa-plus"></i>
+
+New Chat
+
+</button>
+
+<div class="chat-history">
+
+<div class="history active">
+
+<i class="fa-solid fa-message"></i>
+
+Cold & Fever
+
+</div>
+
+<div class="history">
+
+<i class="fa-solid fa-message"></i>
+
+Medicine Advice
+
+</div>
+
+<div class="history">
+
+<i class="fa-solid fa-message"></i>
+
+Diet Plan
+
+</div>
+
+<div class="history">
+
+<i class="fa-solid fa-message"></i>
+
+General Health
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="chat-container">
+
+<div class="chat-header">
+
+<h2>
+
+CAREIQ AI Assistant
+
+</h2>
+
+<p>
+
+Ask anything related to healthcare.
+
+</p>
+
+</div>
+
+<div class="chat-box" id="chatBox">
+
+<div class="bot-message">
+
+<div class="avatar">
+
+🤖
+
+</div>
+
+<div class="message">
+
+Hello 👋
+
+I'm CAREIQ AI.
+
+I can help you understand prescriptions,
+
+identify medicines,
+
+answer health questions,
+
+and explain reports.
+
+How can I help today?
+
+</div>
+
+</div>
+
+</div>
+
+<div class="suggestions">
+
+<button>
+
+What is fever?
+
+</button>
+
+<button>
+
+Explain my prescription
+
+</button>
+
+<button>
+
+Medicine side effects
+
+</button>
+
+<button>
+
+Healthy diet
+
+</button>
+
+</div>
+
+<div class="chat-input">
+
+<input
+
+type="text"
+
+id="userInput"
+
+placeholder="Ask your health question...">
+
+<button id="sendBtn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="js/assistant.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Medical Vault | CAREIQ</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/vault.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<img src="assets/logo/logo.png">
+
+<h2>CAREIQ</h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="assistant.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+<li>
+
+<a href="prescriptions.html">
+
+<i class="fa-solid fa-file-medical"></i>
+
+Prescription Scanner
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="vault.html">
+
+<i class="fa-solid fa-folder-open"></i>
+
+Medical Vault
+
+</a>
+
+</li>
+
+<li>
+
+<a href="medicine.html">
+
+<i class="fa-solid fa-pills"></i>
+
+Medicine Identifier
+
+</a>
+
+</li>
+
+<li>
+
+<a href="emergency.html">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+Emergency
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<main class="main-content">
+
+<div class="vault-page">
+
+<div class="vault-header">
+
+<div>
+
+<h1>Medical Vault</h1>
+
+<p>
+
+All your health records securely stored in one place.
+
+</p>
+
+</div>
+
+<button class="btn-primary" id="uploadDocument">
+
+<i class="fa-solid fa-upload"></i>
+
+Upload File
+
+</button>
+
+<input
+type="file"
+id="vaultFile"
+hidden>
+
+</div>
+
+<!-- Search -->
+
+<div class="vault-search">
+
+<input
+
+type="text"
+
+id="searchInput"
+
+placeholder="Search reports...">
+
+</div>
+
+<!-- Cards -->
+
+<div class="vault-grid"
+
+id="vaultGrid">
+
+<!-- Generated using JavaScript -->
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="js/vault.js"></script>
+
+</body>
+
+</html>

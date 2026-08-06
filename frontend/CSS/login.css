@@ -249,6 +249,7 @@
     color:#6B7280;
 
     transition:.3s;
+    height: 900px;
 }
 
 .password-box i:hover{

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Emergency SOS | CAREIQ</title>
+
+<link rel="stylesheet" href="./CSS/emerg.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<img src="assets/logo/logo.png">
+
+<h2>CAREIQ</h2>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="assistant.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+<li>
+
+<a href="prescriptions.html">
+
+<i class="fa-solid fa-file-medical"></i>
+
+Prescription Scanner
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vault.html">
+
+<i class="fa-solid fa-folder-open"></i>
+
+Medical Vault
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="emergency.html">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+Emergency SOS
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<main class="main-content">
+
+<div class="emergency-page">
+
+<div class="emergency-header">
+
+<h1>
+
+Emergency Center
+
+</h1>
+
+<p>
+
+Quick access to your medical information during emergencies.
+
+</p>
+
+</div>
+
+<!-- SOS -->
+
+<div class="sos-card">
+
+<button id="sosButton">
+
+SOS
+
+</button>
+
+<p>
+
+Press only in case of emergency.
+
+</p>
+
+</div>
+
+<!-- Profile -->
+
+<div class="emergency-grid">
+
+<div class="medical-card">
+
+<h2>
+
+Emergency Medical Profile
+
+</h2>
+
+<div class="info">
+
+<strong>Name</strong>
+
+<span id="userName">
+
+Loading...
+
+</span>
+
+</div>
+
+<div class="info">
+
+<strong>Blood Group</strong>
+
+<span id="bloodGroup">
+
+O+
+
+</span>
+
+</div>
+
+<div class="info">
+
+<strong>Allergies</strong>
+
+<span>
+
+None
+
+</span>
+
+</div>
+
+<div class="info">
+
+<strong>Emergency Contact</strong>
+
+<span id="emergencyContact">
+
+Loading...
+
+</span>
+
+</div>
+
+</div>
+
+<div class="qr-card">
+
+<h2>
+
+Emergency QR
+
+</h2>
+
+<img
+
+src="assets/images/qr-placeholder.png"
+
+id="qrImage">
+
+<p>
+
+Scan to access emergency health information.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="hospital-card">
+
+<h2>
+
+Nearby Hospitals
+
+</h2>
+
+<div class="hospital-list">
+
+<div class="hospital">
+
+<i class="fa-solid fa-hospital"></i>
+
+<div>
+
+<strong>City Care Hospital</strong>
+
+<p>2.1 km away</p>
+
+</div>
+
+</div>
+
+<div class="hospital">
+
+<i class="fa-solid fa-hospital"></i>
+
+<div>
+
+<strong>LifeLine Hospital</strong>
+
+<p>3.4 km away</p>
+
+</div>
+
+</div>
+
+<div class="hospital">
+
+<i class="fa-solid fa-hospital"></i>
+
+<div>
+
+<strong>Apollo Clinic</strong>
+
+<p>5.2 km away</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="js/emergency.js"></script>
+
+</body>
+
+</html>
